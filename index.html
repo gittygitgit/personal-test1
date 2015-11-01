@@ -1,0 +1,42 @@
+---
+layout: default
+---
+
+  {% for post in site.posts %}
+    <div class="post-preview">
+
+        <a href="{{ post.url }}">{
+            <h2 class="post-title">
+                {{ post.title }}
+            </h2>
+            <h3 class="post-subtitle">
+                {{ post.excerpt }}
+            </h3>
+        </a>
+        <p class="post-meta">Posted by <a href="#">Start Bootstrap</a> on September 24, 2014</p>
+    </div>
+  {% endfor %}
+
+    <hr>
+    <!-- Pager -->
+    <ul class="pager">
+        <li class="next">
+            <a href="#">Older Posts &rarr;</a>
+        </li>
+    </ul>
+
+
+   
+
+   
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+
